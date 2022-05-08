@@ -285,7 +285,7 @@ body {
 @media only screen and (max-width: 424px) {
   .about-me__skills-li {
     font-size: 12px;
-    line-height: 2vh;
+    line-height: 2.9vh;
     justify-items: start;
     padding-left: 10px;
   }
