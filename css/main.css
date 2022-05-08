@@ -1,0 +1,305 @@
+/* Reset and base styles  */
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  /*outline: none;*/
+}
+
+a:focus,
+a:active {
+  /* outline: none;*/
+}
+
+/* Links */
+a,
+a:link,
+a:visited {
+  /* color: inherit; */
+  text-decoration: none;
+  /* display: inline-block; */
+}
+
+a:hover {
+  /* color: inherit; */
+  text-decoration: none;
+}
+
+/* Common */
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Form */
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type="submit"] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+body {
+  font-family: 'Russo One', sans-serif;
+  background: url("../img/bg.jpg") 0 0 no-repeat fixed;
+}
+
+.container {
+  max-width: 1000px;
+  min-height: 100vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+.my-contact {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.my-contact__image {
+  padding: 15px;
+}
+
+.my-contact__title {
+  display: grid;
+  row-gap: 30px;
+  padding: 15px;
+  letter-spacing: 1px;
+}
+
+.my-contact__title-h1 {
+  font-size: 28px;
+}
+
+.my-contact__title-h2 {
+  font-size: 24px;
+}
+
+.my-contact__title-p {
+  font-size: 18px;
+}
+
+.my-contact__text {
+  padding: 5px 0 0px 0;
+}
+
+.my-contact__text::before {
+  content: "";
+  border-left: 10px solid #858585;
+  padding-left: 10px;
+}
+
+.footer {
+  display: grid;
+  grid-template-rows: 1;
+  justify-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.social__links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.social__links-img:hover {
+  box-shadow: 0 0 6px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 20%;
+}
+
+.about-me {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  min-height: 65.3vh;
+}
+
+.about-me__hobby {
+  display: grid;
+  justify-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.about-me__skills {
+  display: grid;
+  justify-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.about-me__hobby-h2 {
+  font-size: 28px;
+  padding-bottom: 10px;
+}
+
+.about-me__hobby-li {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  line-height: 12vh;
+}
+
+.about-me__skills-h2 {
+  display: grid;
+  justify-items: center;
+  font-size: 28px;
+  padding-bottom: 10px;
+}
+
+.about-me__skills-li {
+  line-height: 3vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  color: #fff;
+  text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;
+}
+
+@media only screen and (max-width: 600px) {
+  .my-contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    justify-items: center;
+  }
+  .my-contact__image {
+    width: 200px;
+    padding: 5px;
+  }
+  .my-contact__title {
+    padding-left: 30%;
+    padding-top: 0px;
+    padding-bottom: 5px;
+  }
+  .my-contact__title-h1 {
+    font-size: 20px;
+  }
+  .my-contact__title-h2 {
+    font-size: 18px;
+  }
+  .my-contact__title-p {
+    font-size: 16px;
+  }
+  .about-me__hobby-h2 {
+    font-size: 20px;
+    padding-top: 50px;
+  }
+  .about-me__hobby-li {
+    font-size: 12px;
+    line-height: 10vh;
+  }
+  .about-me__skills-h2 {
+    font-size: 20px;
+    padding-top: 10px;
+  }
+  .about-me__skills-li {
+    font-size: 12px;
+    line-height: 2.9vh;
+  }
+}
+
+@media only screen and (max-width: 424px) {
+  .about-me__skills-li {
+    font-size: 12px;
+    line-height: 2vh;
+    justify-items: start;
+    border-bottom: 1px solid #000;
+    padding-left: 10px;
+  }
+  .my-contact__title {
+    padding-left: 20%;
+  }
+  .my-contact__title-h1 {
+    font-size: 16px;
+  }
+  .my-contact__title-h2 {
+    font-size: 16px;
+  }
+  .my-contact__title-p {
+    font-size: 14px;
+  }
+}

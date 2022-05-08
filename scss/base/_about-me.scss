@@ -1,0 +1,44 @@
+.about-me {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    min-height: 65.3vh;
+}
+.about-me__hobby {
+    display: grid;
+    justify-items: center;
+    background-color: rgba($color: #000000, $alpha: 0.3);
+}
+
+.about-me__skills {
+    display: grid;
+    justify-items: center;
+    background-color: rgba($color: #000000, $alpha: 0.2);
+}
+
+.about-me__hobby-h2 {
+    font-size: 28px;
+    padding-bottom: 10px;
+}
+
+.about-me__hobby-li {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    line-height: 12vh;
+}
+
+.about-me__skills-h2 {
+    display: grid;
+    justify-items: center;
+    font-size: 28px;
+    padding-bottom: 10px;
+}
+
+.about-me__skills-li {
+    line-height: 3vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    color: #fff;
+    text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;
+}

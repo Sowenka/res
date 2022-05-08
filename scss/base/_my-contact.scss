@@ -1,0 +1,34 @@
+.my-contact {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    color: white;
+}
+.my-contact__image {
+    padding: 15px;
+}
+
+.my-contact__title {
+    display: grid;
+    row-gap: 30px;
+    padding: 15px;
+    letter-spacing: 1px;
+}
+.my-contact__title-h1 {
+    font-size: 28px;
+}
+.my-contact__title-h2 {
+    font-size: 24px;
+}
+.my-contact__title-p {
+    font-size: 18px;
+}
+
+.my-contact__text {
+    padding: 5px 0 0px 0;
+}
+.my-contact__text::before {
+    content: "";
+    border-left: 10px solid rgb(133, 133, 133);
+    padding-left: 10px;
+}

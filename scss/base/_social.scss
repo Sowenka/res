@@ -1,0 +1,12 @@
+.social__links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.social__links-img:hover {
+    box-shadow: 0 0 6px 5px rgba(#000, 0.4);
+    border-radius: 20%;
+}

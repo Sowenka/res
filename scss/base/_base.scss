@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+body {
+	font-family: 'Russo One', sans-serif;
+	background: url('img/bg.jpg') 0 0 no-repeat fixed;
+}
+
+.container {
+	max-width: 1000px;
+	min-height: 100vh;
+	margin: 0 auto;
+	position: relative;
+}
