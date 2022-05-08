@@ -287,19 +287,18 @@ body {
     font-size: 12px;
     line-height: 2vh;
     justify-items: start;
-    border-bottom: 1px solid #000;
     padding-left: 10px;
   }
   .my-contact__title {
     padding-left: 20%;
   }
   .my-contact__title-h1 {
-    font-size: 16px;
+    font-size: 14px;
   }
   .my-contact__title-h2 {
-    font-size: 16px;
+    font-size: 12px;
   }
   .my-contact__title-p {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
